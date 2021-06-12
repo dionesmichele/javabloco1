@@ -1,27 +1,72 @@
-
+package POO;
 public class Preguica extends Animal1{
 		
-		private String move_lento;
-		private String dorme;
-		public Preguica(String nome,int idade,String move_lento,String dorme,int peso,String tamanho)
-		
-		{ super(nome,idade,peso,tamanho);
-		this.move_lento=move_lento;
-		this.dorme=dorme;
-		}
-		public String getMove_lento() {
-			return move_lento;
-		}
-		public String getDorme() {
-			return dorme;
+	
+		public Preguica ()
+		{ super ("Preguica");
 		}
 		
-		public void imprimirInfo()
+
+		
+		@Override
+		public void Nome(String nomeAnimal)
 		{
-			System.out.println("\nNome do animal: "+getNome()+
-					"\nIdade: "+getIdade()+" anos"+" seu peso é de  "+getPeso()+"kgs"+"\nseu tamanho é  "+getTamanho()+
-					""+getMove_lento()+"\ne dorme"+getDorme());
+			System.out.println("\nNome da preguiça: "+nomeAnimal);
+		}
+		
+		@Override
+		public void Idade(int idadeAnimal)
+		{
+			System.out.println("\nIdade: "+idadeAnimal);
+		}
+		
+		@Override
+		public void Som(String somAnimal)
+		{
+			System.out.println("\nSom que a sua preguiça emite: "+somAnimal);
+		}
+		
+		public void  Lento()
+		{
+			System.out.println("\n Preguiças são conhecidas por serem lentas,essa não escapa");
+		}
+		public void Dorme() 
+		{
+			System.out.println("\n Alem de tudo,tambem dorme muito.");
+
+		}
+
+
+
+		@Override
+		public void Peso(int pesoAnimal) {
+			// TODO Auto-generated method stub
 			
 		}
+
+
+
+		@Override
+		public void Tamanho(int tamanhoAnimal) {
+			// TODO Auto-generated method stub
+			
+		}
+
+
+
+		@Override
+		public void Cor(String corAnimal) {
+			// TODO Auto-generated method stub
+			
+		}
+
+
+
+		@Override
+		public void Pelagem(String peloAnimal) {
+			// TODO Auto-generated method stub
+			
+		}
+		
 		
 }
