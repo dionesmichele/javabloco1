@@ -1,37 +1,63 @@
+package POO;
 
-public class Cavalo extends Animal1{
+		public class Cavalo extends Animal1{
+			
+			public  Cavalo()
+			{
+				super("Cavalo");
+			}
+			
+			@Override
+			public void Nome(String nomeAnimal)
+			{
+			
+			
+			System.out.println("\nNome do cachorro: "+nomeAnimal);
+			}
+			
+			@Override
+			public void Idade(int idadeAnimal)
+			{
+				System.out.println("\nIdade: "+idadeAnimal);
+			}
+			
+			@Override
+			public void Som(String somAnimal)
+			{
+				System.out.println("\nSom que o seu cachorro emite: "+somAnimal);
+			}
+			@Override
+			public void Cor(String corAnimal)
+			{
+				System.out.println("\n A cor deste cachorro é  "+corAnimal);
+			}
+			@Override
+			public void Pelagem(String peloAnimal)
+			{
+				System.out.println(" e sua pelagem é do tipo "+peloAnimal);
+			}
+			 
+			public void Corre()
+			{
+			    System.out.println(" esse animal corre ");
+			}
+			
 		
-		private String trota;
-		private String relincha;
-		private String cor;
-		private String pelagem;
-		
-		public Cavalo(String nome,int idade,int peso,String tamanho,String trota,String relincha,String cor,String pelagem)
-		
-		{ super(nome,idade,peso,tamanho);
-		this.cor=cor;
-		this.pelagem=pelagem;
-		this.trota=trota;
-		this.relincha=relincha;
-		}
-		public String getTrota() {
-			return trota;
-		}
-		public String getRelincha() {
-			return relincha;
-		}
-		public String getCor() {
-			return cor;
-		}
-		public String getPelagem() {
-			return pelagem;
-		}
-		public void imprimirInfo()
-		{
-			System.out.println("\nNome do animal: "+getNome()+
-					",sua idade é : "+getIdade()+"anos"+" seu peso é  "+getPeso()+"kgs"+"\nseu tamanho é  "+getTamanho()+
-					", sua cor é  "+getCor()+" e sua pelagem é  "+getPelagem()+
-					"\nesse animal cavalga trotando"+getTrota()+" e relincha"+getRelincha());
+			public void Trota()
+			{
+			    System.out.println("\nesse animal cavalga trotando");
+			}
+
+			@Override
+			public void Peso(int pesoAnimal) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void Tamanho(int tamanhoAnimal) {
+				// TODO Auto-generated method stub
+				
+			}
 			
 		}
-}
