@@ -1,36 +1,62 @@
-
+package POO;
 public class Cachorro extends Animal1{
 	
-		private String corre;
-		private String late;
-		private String cor;
-		private String pelagem;
-		public Cachorro(String nome,int idade,int peso,String tamanho,String corre,String late,String cor,String pelagem)
 		
-		{ super(nome,idade,peso,tamanho);
-		this.corre=corre;
-		this.late=late;
-		this.cor=cor;
-		this.pelagem=pelagem;
-		}
-		public String getCorre() {
-			return corre;
-		}
-		public String getLate() {
-			return late;
-		}
-		public String getCor() {
-			return cor;
-		}
-		public String getPelagem() {
-			return pelagem;
-		}
-		public void imprimirInfo()
+		public Cachorro()
 		{
-			System.out.println("\nNome do animal: "+getNome()+","
-					+getIdade()+" anos"+"\nseu peso é "+getPeso()+"kg(s)"+",seu tamanho é "+getTamanho()+"\n sua cor é  "+getCor()+" e sua pelagem é "+getPelagem()+
-					"\n esse animal corre e"+getCorre()+" late"+getLate());
+			super("Cachorro");
+		}
+		
+		@Override
+		public void Nome(String nomeAnimal)
+		{
+		
+		
+		System.out.println("\nNome do cachorro: "+nomeAnimal);
+		}
+		
+		@Override
+		public void Idade(int idadeAnimal)
+		{
+			System.out.println("\nIdade: "+idadeAnimal);
+		}
+		
+		@Override
+		public void Som(String somAnimal)
+		{
+			System.out.println("\nSom que o seu cachorro emite: "+somAnimal);
+		}
+		@Override
+		public void Cor(String corAnimal)
+		{
+			System.out.println("\n A cor deste cachorro é  "+corAnimal);
+		}
+		@Override
+		public void Pelagem(String peloAnimal)
+		{
+			System.out.println(" e sua pelagem é do tipo "+peloAnimal);
+		}
+		 
+		public void Corre()
+		{
+		System.out.println(" esse animal corre ");
+		}
+		
+		public void Pula()
+		{
+		System.out.println(" esse animal tambem pode pular! ");
+		}
+
+		@Override
+		public void Peso(int pesoAnimal) {
+			// TODO Auto-generated method stub
 			
-		}  
+		}
+
+		@Override
+		public void Tamanho(int tamanhoAnimal) {
+			// TODO Auto-generated method stub
+			
+		}
 		
 }
